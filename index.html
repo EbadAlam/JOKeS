@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<title>JOKeS</title>
+		<style>
+			*{
+				margin:0px;
+				padding:0px;
+				font-family: cursive;
+			}
+			.container{
+				max-width: 1140px;
+				margin:0 auto;
+			}
+			h1{
+			font-size: 35px;
+    		margin-top: 3%;
+    		margin-bottom: 3%;
+			}
+			#input{
+			margin-bottom: 3%;
+    		font-size: 20px;
+    		padding-left: 15px;
+			}
+			li{
+				font-size:20px;
+				list-style: number;
+			}
+			.btn{
+			padding: 10px;
+    		color: black;
+    		font-size: 22px;
+    		border: none;
+    		border-radius: 20px;
+    		background: rgb(155, 196, 231);
+    		cursor: pointer;
+    	}
+		#clear-btn{
+			background-color: red;
+			padding:10px;
+			color:rgb(255, 255, 255);
+			border: none;
+			border-radius: 10px;
+			font-size: 20px;
+			margin-top:20px;
+			cursor:pointer;
+		}
+		.xyz{
+			margin-left: 90%;
+		}
+		.fav-btn{
+			background-color: green;
+			color:white;
+			border:none;
+			border-radius:10px;
+			font-size: 15px;
+    		padding: 2px 15px;
+    		cursor:pointer;
+		}
+		#fav{
+			text-align:center;
+		}
+		a{
+			text-decoration:none;
+		}
+		footer{
+			background: black;
+			color: white;
+			padding: 10px;
+			text-align: center;
+		}
+		@media screen and (max-width: 1100px) {
+
+			#jokes{
+				text-align:center;
+			}
+			.xyz{
+				/*font-size:20px;*/
+				display:none;
+			}
+			.container{
+				max-width:500px;
+			}
+			#clear-btn{
+				
+			margin-bottom:20px;
+			}
+		}
+		@media screen and (max-width: 500px){
+
+			#input{
+				border: 1px solid black;
+			}
+			li{
+				font-size: 10px;
+			}
+		}
+
+		</style>
+	</head>
+	<body>
+		<section id="jokes" class="container">
+		<h1 id="top">JOKeS</h1>
+		<form action="" id="for-submit">
+		<input type="number" id="input"><br>
+		<button class="btn" id="button">Get JOKeS</button></form><button class="btn xyz"><a href="#clear-btn">DOwN</a></button>
+		<ul id="jokes-output">
+			<!-- <li>one</li> -->
+			<!-- <li>TwO</li> -->
+		</ul>
+		<button id="clear-btn">Clear JOKeS</button><button class="btn xyz"><a href="#top">uP</a></button>
+		</section>
+		
+<footer>
+	<h3>Copyright by Ebad</h3>
+</footer>
+	</body>
+	<script src="./app.js"></script>
+</html>
